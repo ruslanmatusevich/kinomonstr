@@ -23,7 +23,7 @@
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="films.html">Фильмы</a></li>
                 <li><a href="serial.html">Сериалы</a></li>
-                <li><a href="rating.html">Рейтинг фильмов</a></li>
+                <li class="selected"><a href="rating.html">Рейтинг фильмов</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
 
             </ul>
@@ -68,52 +68,40 @@
             </div>
         </aside>
 
-        <div class="content">
-            <h2>Интерстеллар</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/qcPfI0y7wRU"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            <div class="info_film_page">
-                <span class="label">рейтинг: </span><span class="value">8.1 / 10</span>
-                <span class="label">год: </span><span class="value">2014</span>
-                <span class="label">режиссер: </span><span class="value">Кристофер Нолан</span>
-            </div>
-            <hr>
-            <h2>Описание интерстеллар</h2>
-            <div class="description_film">
-                <img src="assets/img/inter.png" alt="фильм">
-                <p>Фильм о путешествиях группы исследователей, которые используют недавно обнаруженный
-                    пространственно-временной тоннель, чтобы обойти ограничения полета человека в космосе и покорить
-                    огромные расстояния на межзвездном корабле.</p>
-            </div>
-            <hr>
-            <h2>Отзывы об Интерстеллар</h2>
-            <div class="reviews">
-                <div class="review_name">
-                    Сергей
-                </div>
-                <div class="review_text ">
-                    Отличный фильм. 3 часа пролетели незаметно.
-                </div>
-            </div>
-            <div class="reviews">
-                <div class="review_name">
-                    Дмитрий
-                </div>
-                <div class="review_text ">
-                    После фильма Начало, я с нетерпением ждал еще работ от Кристофера Нолана. Интерстеллар меня
-                    впечатлил.
-                </div>
-            </div>
-            <div class="send">
-                <form method="POST" id="review" action="#">
-                    <input type="text" name="review_name" placeholder="ваше имя">
-                    <textarea name="review_text"></textarea>
-                    <input type="submit" value="отправить">
-                </form>
-            </div>
-        </div>
+        <section class="content">
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Фильмы</th>
+                    <th class="center">Год</th>
+                    <th class="center">Рейтинг</th>
+                </tr>
+                <tr>
+                    <td class="center"><img src="assets/img/inter.png" alt="фильм"></td>
+                    <td>1. <a href="show.html">Интерстеллар</a></td>
+                    <td class="center">2014</td>
+                    <td class="center rating">8.1</td>
+                </tr>
+                <tr>
+                    <td class="center"><img src="assets/img/matrix.png" alt="фильм"></td>
+                    <td>1. <a href="show.html">Матрица</a></td>
+                    <td class="center">1999</td>
+                    <td class="center rating">8.0</td>
+                </tr>
+                <tr>
+                    <td class="center"><img src="assets/img/max.png" alt="фильм"></td>
+                    <td>1. <a href="show.html">Безумный Макс</a></td>
+                    <td class="center">2015</td>
+                    <td class="center rating">7.5</td>
+                </tr>
+                <tr>
+                    <td class="center"><img src="assets/img/cloud.png" alt="фильм"></td>
+                    <td>1. <a href="show.html">Облачный атлас</a></td>
+                    <td class="center">2013</td>
+                    <td class="center rating">7.4</td>
+                </tr>
+            </table>
+        </section>
     </main>
 
     <footer class="footer">
